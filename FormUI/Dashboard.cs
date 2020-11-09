@@ -29,11 +29,14 @@ namespace FormUI
             dropDownBox.DataSource = people;
             dropDownBox.DisplayMember = "FullName";
 
-           
+            filteredPeopleList.DataSource = people.Where(person => person.YearsExperience >= 5).ToList();
+            filteredPeopleList.DisplayMember = "FullName";
+        
         }
         
         private void UpdateBindings()
         {
+            filteredPeopleList.DataSource = people.Where(person => person.YearsExperience >= 5).ToList();
 
         }
 
