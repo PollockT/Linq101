@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FormUI\FormUI.csproj">
+      <Project>{f08ed7b8-93ff-43c5-a65f-de9bd907c2da}</Project>
+      <Name>FormUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LinqLibrary\LinqLibrary.csproj">
+      <Project>{68e8b357-af6d-4380-8b8b-c100ba76ada1}</Project>
+      <Name>LinqLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

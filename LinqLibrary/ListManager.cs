@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinqLibrary
 {
-    class ListManager
+    public class ListManager
     {
         public static List<Person> LoadSampleData()
         {
